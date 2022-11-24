@@ -1,836 +1,1051 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Fundamentals of HTML5 and CSS3</title>
-    <meta charset="utf-8" />
-    <style>
-      body {
-      }
-      p {
-        text-align: center;
-        font-size: 150%;
-      }
-      table p {
-        font-size: 100%;
-      }
-      table {
-        margin: 0px auto;
-        max-width: 60%;
-      }
-      table,
-      th,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-      th,
-      td {
-        padding: 10px;
-      }
-      h1,
-      h2 {
-        text-align: center;
-      }
-      a {
-        text-decoration: none;
-      }
-      a:hover {
-        color: #555555;
-      }
-      nav {
-        text-align: center;
-        margin: 20px;
-      }
-      .topBtn {
-        margin: 20px auto;
-        text-align: center;
-        background-color: #ccf;
-        width: 150px;
-        padding: 10px;
-        border-radius: 25px;
-        font-size: 1.2em;
-      }
-      footer {
-        text-align: center;
-      }
-      hr {
-        width: 80%;
-      }
-    </style>
-  </head>
-  <body>
-    <h1 id="top">KO Tech Academy's Fundamentals of HTML5 and CSS3 course.</h1>
-    <p>
-      This website shows all the lessons and pages created during this course.
-    </p>
-    <hr />
-    <nav>
-      <a href="#module2">Module 2</a> | <a href="#module3">Module 3</a> |
-      <a href="#module4">Module 4</a> | <a href="#module6">Module 6</a> |
-      <a href="#module7">Module 7</a> | <a href="#module8">Module 8</a> |
-      <a href="#module9">Module 9</a> | <a href="#module10">Module 10</a> |
-      <a href="#module11">Module 11</a> | <a href="#module12">Module 12</a>
-    </nav>
-    <hr />
-    <h2 id="module2">Module 2: HTML Basics</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="Module2/helloWorld.html" target="_blank">Hello World</a>
-          </td>
-          <td>This is the very basic, just showing text on a webpage.</td>
-        </tr>
-        <tr>
-          <td><a href="Module2/template.html" target="_blank">Template</a></td>
-          <td>
-            Basic template that was used to avoid typing tags that are in every
-            webpage.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/myHeadings.html" target="_blank">Headings</a>
-          </td>
-          <td>Showcases the six different heading levels.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/paragraphExample.html" target="_blank"
-              >Paragraph Example</a
-            >
-          </td>
-          <td>
-            Extending from the Headings page, incorporated a paragraph tag.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/lineBreak.html" target="_blank">Linebreak</a>
-          </td>
-          <td>Showcasing linebreaks.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/blockquoteExample.html" target="_blank"
-              >Blockquote Example</a
-            >
-          </td>
-          <td>Using HTML's blockquote tag to demonstrate when using quotes.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/phraseElementsExample.html" target="_blank"
-              >Phrase Elements Example</a
-            >
-          </td>
-          <td>Showing the use of the strong and em tags.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/orderedListExample.html" target="_blank"
-              >Ordered List Example</a
-            >
-          </td>
-          <td>Making ordered lists</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/unorderedListExample.html" target="_blank">
-              Unordered List Example</a
-            >
-          </td>
-          <td>
-            Showing the difference between the ordered list example previously
-            and the unordered list here.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/descriptionListExample.html" target="_blank"
-              >Description List Example</a
-            >
-          </td>
-          <td>Using the Description List tags</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/examplesOfSpecialCharacters.html" target="_blank"
-              >Examples of Special Characters</a
-            >
-          </td>
-          <td>Using different special characters and their uses.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/anchorElementExample.html" target="_blank"
-              >Anchor Element Example</a
-            >
-          </td>
-          <td>Using anchor tags to create hyperlinks to other pages.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/validateExample.html" target="_blank"
-              >Validate Example</a
-            >
-          </td>
-          <td>
-            Used this code and online tools to validate the HTML file to find
-            and correct errors.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module2/structureExample.html" target="_blank"
-              >Structure Example</a
-            >
-          </td>
-          <td>
-            Using HTML structure tags such as nav, main, and footer to organize
-            the information.
-          </td>
-        </tr>
-      </tbody>
-    </table>
+	<head>
+		<title>Fundamentals of HTML5 and CSS3</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1 id="top">
+			KO Tech Academy's Fundamentals of HTML5 and CSS3 course.
+		</h1>
+		<p>
+			This website shows all the lessons and pages created during this 
+			course.
+		</p>
+		<hr />
+		<nav>
+			<a href="#module2">Module 2</a> | 
+			<a href="#module3">Module 3</a> |
+			<a href="#module4">Module 4</a> | 
+			<a href="#module6">Module 6</a> |
+			<a href="#module7">Module 7</a> | 
+			<a href="#module8">Module 8</a> |
+			<a href="#module9">Module 9</a> | 
+			<a href="#module10">Module 10</a> |
+			<a href="#module11">Module 11</a> | 
+			<a href="#module12">Module 12</a>
+		</nav>
+		<hr />
+		<h2 id="module2">Module 2: HTML Basics</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module2/helloWorld.html" target="_blank">
+							Hello World
+						</a>
+					</td>
+					<td>
+						This is the very basic, just showing text on a webpage.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module2/template.html" target="_blank">
+							Template
+						</a>
+					</td>
+					<td>
+						Basic template that was used to avoid typing tags that
+						are in every webpage.
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module2/myHeadings.html" target="_blank">Headings</a>
+					</td>
+					<td>Showcases the six different heading levels.</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module2/paragraphExample.html" target="_blank">
+						Paragraph Example
+						</a>
+					</td>
+					<td>
+						Extending from the Headings page, incorporated a 
+						paragraph tag.
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module2/lineBreak.html" target="_blank">Linebreak</a>
+					</td>
+					<td>Showcasing linebreaks.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module2/blockquoteExample.html" target="_blank">
+							Blockquote Example
+						</a>
+					</td>
+					<td>
+						Using HTML's blockquote tag to demonstrate when using 
+						quotes.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module2/phraseElementsExample.html" 
+						target="_blank">
+							Phrase Elements Example
+						</a>
+					</td>
+					<td>Showing the use of the strong and em tags.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module2/orderedListExample.html" target="_blank">
+							Ordered List Example
+						</a>
+					</td>
+					<td>Making ordered lists</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module2/unorderedListExample.html" 
+							target="_blank">
+							Unordered List Example
+						</a>
+					</td>
+					<td>
+						Showing the difference between the ordered list example 
+						previously and the unordered list here.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module2/descriptionListExample.html" 
+							target="_blank">
+							Description List Example
+						</a>
+					</td>
+					<td>Using the Description List tags</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module2/examplesOfSpecialCharacters.html" 
+							target="_blank">
+							Examples of Special Characters
+						</a>
+					</td>
+					<td>Using different special characters and their uses.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module2/anchorElementExample.html" 
+							target="_blank">
+							Anchor Element Example
+						</a>
+					</td>
+					<td>
+						Using anchor tags to create hyperlinks to other pages.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module2/validateExample.html" target="_blank">
+							Validate Example
+						</a>
+					</td>
+					<td>
+						Used this code and online tools to validate the HTML 
+						file to find and correct errors.
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module2/structureExample.html" target="_blank">
+						Structure Example
+						</a>
+					</td>
+					<td>
+						Using HTML structure tags such as nav, main, and footer 
+						to organize the information.
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+		<!-- End Module 2 -->
 
-    <hr />
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
 
-    <h2 id="module3">Module 3: Color & Text, CSS</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="Module3/inlineStyleP.html" target="_blank"
-              >Inline Style Paragraph Example</a
-            >
-          </td>
-          <td>
-            Showing CSS properties with the inline styling for a paragraph tag.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module3/inlineStyleExample.html" target="_blank"
-              >Inline Style Example</a
-            >
-          </td>
-          <td>Showing Inline styling for different tags</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module3/fontFamily.html" target="_blank">Font Family</a>
-          </td>
-          <td>Showing the use of the Font Family properties.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module3/embeddedCSS1.html" target="_blank">Embedded CSS</a>
-          </td>
-          <td>Using HTML's embedded style tag.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module3/citEmbeddedStyle1.html" target="_blank"
-              >CIT Embedded Style Example</a
-            >
-          </td>
-          <td>Using HTML's embedded style tag on a more developed page.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module3/3.2/index.html" target="_blank"
-              >Text Indent and Text Shadow</a
-            >
-          </td>
-          <td>Adding the Text Indent and Text Shadow properties to CSS</td>
-        </tr>
-        <tr>
-          <td><a href="Module3/3.5/index.html" target="_blank">Span</a></td>
-          <td>Adding the span tag to HTML with CSS properties</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module3/3.6/index.html" target="_blank"
-              >External Stylesheet</a
-            >
-          </td>
-          <td>
-            Adding an external stylesheet to demonstrate the advantage of
-            styling for multiple webpages.<br />
-            There is no contact page, but there is a Services page.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module3/3.8/index.html" target="_blank">Body Wrapper</a>
-          </td>
-          <td>
-            Adding Wrapper id to the content.
-            <br />
-            There is a Services page, no Contact page.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module3/MyCascade/myCascadePage1.html" target="_blank"
-              >Cascade</a
-            >
-          </td>
-          <td>Showing the hierarchy of the CSS.</td>
-        </tr>
-      </tbody>
-    </table>
+		<hr />
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+		<h2 id="module3">Module 3: Color & Text, CSS</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module3/inlineStyleP.html" target="_blank">
+							Inline Style Paragraph Example
+						</a>
+					</td>
+					<td>
+						Showing CSS properties with the inline styling for a 
+						paragraph tag.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module3/inlineStyleExample.html" target="_blank">
+							Inline Style Example
+						</a>
+					</td>
+					<td>Showing Inline styling for different tags</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module3/fontFamily.html" target="_blank">
+						Font Family
+					</a>
+					</td>
+					<td>Showing the use of the Font Family properties.</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module3/embeddedCSS1.html" target="_blank">
+						Embedded CSS
+					</a>
+					</td>
+					<td>Using HTML's embedded style tag.</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module3/citEmbeddedStyle1.html" target="_blank">
+						CIT Embedded Style Example
+					</a>
+					</td>
+					<td>
+						Using HTML's embedded style tag on a more developed page.
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module3/3.2/index.html" target="_blank">
+						Text Indent and Text Shadow
+					</a>
+					</td>
+					<td>
+						Adding the Text Indent and Text Shadow properties to CSS.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module3/3.5/index.html" target="_blank">
+							Span
+						</a>
+					</td>
+					<td>Adding the span tag to HTML with CSS properties</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module3/3.6/index.html" target="_blank">
+						External Stylesheet
+					</a>
+					</td>
+					<td>
+						Adding an external stylesheet to demonstrate the advantage of
+						styling for multiple webpages.<br />
+						There is no contact page, but there is a Services page.
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module3/3.8/index.html" target="_blank">
+						Body Wrapper
+					</a>
+					</td>
+					<td>
+						Adding Wrapper id to the content.<br />
+						There is a Services page, no Contact page.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module3/MyCascade/myCascadePage1.html" 
+							target="_blank">
+							Cascade
+						</a>
+					</td>
+					<td>Showing the hierarchy of the CSS.</td>
+				</tr>
+			</tbody>
+		</table>
 
-    <hr />
+		<!-- End Module 3 -->
 
-    <h2 id="module4">Module 4: Visual Elements & Graphics</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="Module4/hr.html" target="_blank">Horizontal Line</a></td>
-          <td>Creating a horizontal line to break up sections.</td>
-        </tr>
-        <tr>
-          <td><a href="Module4/border.html" target="_blank">Border</a></td>
-          <td>Adding borders.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module4/MyCaption/index.html" target="_blank"
-              >My Caption</a
-            >
-          </td>
-          <td>Creating a plain caption.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module4/MyCaption2/index.html" target="_blank"
-              >My Caption 2</a
-            >
-          </td>
-          <td>Adding a figcaption to a figure</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module4/Kayakch4/index.html" target="_blank"
-              >KayakDoorCounty.com</a
-            >
-          </td>
-          <td>
-            Replacing text with images for links, such as in the nav section.
-          </td>
-        </tr>
-        <tr>
-          <td><a href="Module4/Clip/index.html" target="_blank">Clip</a></td>
-          <td>
-            Showcasing the difference between the background-clip properties of
-            content-box, padding-box, and border-box.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module4/Trilliumch4/index.html" target="_blank"
-              >Triilium</a
-            >
-          </td>
-          <td>
-            Showing the use of background images, and placing them. Along with
-            the background-repeat: no-repeat.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module4/Borderch4/index.html" target="_blank">Border</a>
-          </td>
-          <td>
-            Adding a Border to the heading tag and styling it. Adding a
-            border-radius to soften up the corners.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module4/Shadowch4/index.html" target="_blank"
-              >Text Shadow</a
-            >
-          </td>
-          <td>Adding a subtle text shadow to the h2 tags.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module4/Opacitych4/index.html" target="_blank">Opacity</a>
-          </td>
-          <td>Showing the opacity property with CSS</td>
-        </tr>
-        <tr>
-          <td><a href="Module4/RGBAch4/index.html" target="_blank">RGBA</a></td>
-          <td>Demonstrating the color and alpha property of CSS's RGBA.</td>
-        </tr>
-        <tr>
-          <td><a href="Module4/HSLAch4/index.html" target="_blank">HSLA</a></td>
-          <td>
-            Using the HSLA property rather than the RGBA for color/opacity
-            selection.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module4/Gradientch4/index.html" target="_blank"
-              >Linear Gradient</a
-            >
-          </td>
-          <td>Linear Gradient color change.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module4/Gradientch4/index2.html" target="_blank"
-              >Radiant Gradient</a
-            >
-          </td>
-          <td>
-            Radiant gradient color change. Property starts from the center and
-            works outwards.
-          </td>
-        </tr>
-      </tbody>
-    </table>
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+		<hr />
 
-    <hr />
+		<h2 id="module4">Module 4: Visual Elements & Graphics</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module4/hr.html" target="_blank">
+							Horizontal Line
+						</a>
+					</td>
+					<td>Creating a horizontal line to break up sections.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/border.html" target="_blank">Border</a>
+					</td>
+					<td>Adding borders.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/MyCaption/index.html" target="_blank">
+							My Caption
+						</a>
+					</td>
+					<td>Creating a plain caption.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/MyCaption2/index.html" target="_blank">
+							My Caption 2
+						</a>
+					</td>
+					<td>Adding a figcaption to a figure</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/Kayakch4/index.html" target="_blank">
+							KayakDoorCounty.com
+						</a>
+					</td>
+					<td>
+						Replacing text with images for links, such as in the nav 
+						section.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/Clip/index.html" target="_blank">Clip</a>
+					</td>
+					<td>
+						Showcasing the difference between the background-clip 
+						properties of content-box, padding-box, and border-box.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/Trilliumch4/index.html" target="_blank">
+							Trillium
+						</a>
+					</td>
+					<td>
+						Showing the use of background images, and placing them. 
+						Along with the background-repeat: no-repeat.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/Borderch4/index.html" target="_blank">
+							Border
+						</a>
+					</td>
+					<td>
+						Adding a Border to the heading tag and styling it. Adding 
+						a border-radius to soften up the corners.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/Shadowch4/index.html" target="_blank">
+							Text Shadow
+						</a>
+					</td>
+					<td>Adding a subtle text shadow to the h2 tags.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/Opacitych4/index.html" target="_blank">
+							Opacity
+						</a>
+					</td>
+					<td>Showing the opacity property with CSS</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/RGBAch4/index.html" target="_blank">
+							RGBA
+						</a>
+					</td>
+					<td>
+						Demonstrating the color and alpha property of CSS's RGBA.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/HSLAch4/index.html" target="_blank">
+							HSLA
+						</a>
+					</td>
+					<td>
+						Using the HSLA property rather than the RGBA for 
+						color/opacity selection.
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<a href="Module4/Gradientch4/index.html" target="_blank">
+						Linear Gradient
+					</a>
+					</td>
+					<td>Linear Gradient color change.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module4/Gradientch4/index2.html" target="_blank">
+							Radiant Gradient
+						</a>
+					</td>
+					<td>
+						Radiant gradient color change. Property starts from the 
+						center and works outwards.
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
-    <h2 id="module6">Module 6: Page Layout</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="Module6/box1.html" target="_blank">Box 1</a></td>
-          <td>
-            Combined Lesson with Box 2 to showcase two separate divs, and a
-            nested div.
-          </td>
-        </tr>
-        <tr>
-          <td><a href="Module6/box2.html" target="_blank">Box 2</a></td>
-          <td>
-            Combined lesson with Box 1. This is the nested div rather than two
-            separate divs.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module6/Ch6float/starteryls.html" target="_blank">Float</a>
-          </td>
-          <td>Showcasing the float: left property.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module6/Layout/index.html" target="_blank">Layout</a>
-          </td>
-          <td>
-            Creating a layout with two columns, one for the nav and the main.
-          </td>
-        </tr>
-        <tr>
-          <td><a href="Module6/Ch6Hover/" target="_blank">Hover</a></td>
-          <td>Showing the pseudo-class on :hover with the nav links.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module6/Button/index.html" target="_blank">Button</a>
-          </td>
-          <td>
-            Creating a nice stylized button that is linked to a sign up page.
-            The sign up page is just to test the button link and has no real
-            styling.
-          </td>
-        </tr>
-        <tr>
-          <td><a href="Module6/Ch6Practice/" target="_blank">Practice</a></td>
-          <td>
-            Using a lot of CSS properties to style the Lighthouse Island Bistro
-            page nicely. The nav section has been updated to look more
-            professionally done over the previous iterations.
-          </td>
-        </tr>
-        <tr>
-          <td><a href="Module6/ReplaceCh6/" target="_blank">Replace</a></td>
-          <td>
-            This replaced the simple text to have a nice image to have a
-            personalized font.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module6/Gallery/index.html" target="_blank"
-              >Image Gallery</a
-            >
-          </td>
-          <td>Created a simple photo gallery.</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module6/Gallery2/index.html" target="_blank"
-              >Image Gallery 2</a
-            >
-          </td>
-          <td>
-            Updated the simple photo gallery to have thumbnails, and upon
-            hovering, there is a larger photo to the right of the thumbnails.
-            With caption text.
-          </td>
-        </tr>
-        <tr>
-          <td><a href="Module6/Ch6Blog/" target="_blank">Blog</a></td>
-          <td>Lighthouse Island Bistro page with a blog setup.</td>
-        </tr>
-      </tbody>
-    </table>
+		<!-- End Module 4 -->
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
 
-    <hr />
+		<hr />
 
-    <h2 id="module7">Module 7: Links, Layout, & Mobile</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="Module7/Casita/" target="_blank">Links</a></td>
-          <td>Creating links to different pages.</td>
-        </tr>
-        <tr>
-          <td><a href="Module7/Favorite/" target="_blank">Favorites</a></td>
-          <td>
-            Using the anchor tag to move to different sections of the webpage.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module7/Sprites/index.html" target="_blank">Sprites</a>
-          </td>
-          <td>
-            Using sprites, that combine smaller images into larger images to
-            save loading times.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module7/Wildflowers3/index.html" target="_blank"
-              >Three-Column CSS Page Layout</a
-            >
-          </td>
-          <td>
-            A majority of today's websites have three columns. Navigation, Main
-            Content, and Sidebar. We see this a lot on websites that have
-            navigation on the left and ads, relevant links, archives, etc. on
-            the right. This page has a left column with the menu, middle column
-            with the main content, and the right with relevant content.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module7/WildflowersPrint/index.html" target="_blank"
-              >CSS Styling for Print</a
-            >
-          </td>
-          <td>
-            CSS styling for Print. This gives control of what a visitor can
-            print from your webpage. Uses the media attribute.<br />
-            <br />
-            Can hide non-essential content. Use {display: none} to remove
-            unwanted content.
-            <br /><br />
-            Can use page-page properties to control the printing page breaks.
-            page-break-before and page-break-after with values of always, avoid,
-            auto.
-            <br /><br />
-            Visitors may wish to see the URL on the printed page for future
-            reference.
-            <br />
-            It takes two properties. A CSS pseudo-element and CSS content.
-            <br />
-            The pseudo elements are :after, :before, :first-letter, and
-            :first-line.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Designing for the Mobile Web (Just Information)</p>
-          </td>
-          <td>
-            There are a few methods to design for the mobile web.
-            <ul>
-              <li>.mobi - this is the mobile domain extension.</li>
-              <li>Have a mobile directory in your website.</li>
-              <li>
-                Use stylesheets, one for the desktop and one for the mobile.
-              </li>
-            </ul>
-            There are several aspects of mobile design to consider.
-            <ul>
-              <li>Multiple, small screen sizes</li>
-              <li>Low bandwidth - low signal strength can slow rendering.</li>
-              <li>
-                Font, color, and media - Common fonts, good contrast between
-                text and background.
-              </li>
-              <li>Awkward controls - Touch displays need to be considered.</li>
-              <li>
-                Functionality - Hyperlinks easily readable and accessible.
-              </li>
-            </ul>
-            Optimize Layout for Mobile Use.
-            <ul>
-              <li>Single column design with a smaller header.</li>
-              <li>Important navigation links.</li>
-              <li>Main content first.</li>
-              <li>Footers for additional navigation and information.</li>
-              <li>Limit scrolling in one direction.</li>
-              <li>Use heading elements.</li>
-              <li>Use lists.</li>
-              <li>Avoid tables at all costs.</li>
-              <li>Label form controls.</li>
-              <li>Avoid using pixel units.</li>
-              <li>Avoid absolute positioning.</li>
-              <li>Hide non-essential content.</li>
-            </ul>
-            Optimize Navigation for Mobile Use.
-            <ul>
-              <li>Provide navigation at the top.</li>
-              <li>Provide consistent navigation.</li>
-              <li>Avoid targeted hyperlinks (open in new window).</li>
-              <li>Balance the number of links and the number of levels.</li>
-            </ul>
-            Optimize Graphics for Mobile Use.
-            <ul>
-              <li>Avoid large images.</li>
-              <li>Configure alternate smaller background images.</li>
-              <li>Avoid using images with text due to downsizing.</li>
-              <li>Specify image sizes custom for mobile displays.</li>
-              <li>Provide alternate text for graphics.</li>
-            </ul>
-            Optimize Text for Mobile Use.
-            <ul>
-              <li>Have good contrast between font and background colors.</li>
-              <li>Use common font types.</li>
-              <li>Use em or percentages for font sizing.</li>
-              <li>Use short page titles.</li>
-              <li>Design for One Web.</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="Module7/" target="_blank"
-              >Viewport Meta Tag & CSS Media Queries.</a
-            >
-          </td>
-          <td>
-            Viewport Meta Tag
-            <ul>
-              <li>Meta tags are quite useful if configured correctly.</li>
-              <li>
-                The viewport meta tag was developed by Apple for the iPhone and
-                Android Smartphones.
-              </li>
-              <li>Helps to properly scale websites for mobile devices.</li>
-              <ul>
-                <li>&#x003c;meta name="viewport" content="width=device-width, initial-scale=1.0"&#x003e</li>
-              </ul>
-              <li>Directives (properties)</li>
-              <ul>
-                <li>width- sets the width of the viewport in pixels.</li>
-                <li>height - sets the height of the viewport in pixels.</li>
-                <li>initial-scale - Numeric multiplier, set to 1 of 100%.</li>
-                <li>minimum-scale - numeric multiplier, default to 0.25 for Mobile Safari.</li>
-                <li>maximum-scale - numeric multiplier, default to 0.25 for Mobile Safari.</li>
-                <li>user-scalable - Yes/no - determines if user has zoom control.</li>
-              </ul>
-            </ul>
-            CSS Media Queries
-            <ul>
-                <li>Progressive enhancements to improve viewing contexts (responsive web design from Module 5).</li>
-                <li>What's a Media Query</li>
-                <ul>
-                    <li>Determines factors of the mobile device.</li>
-                    <li>Screen resolution.</li>
-                    <li>Screen orientation.</li>
-                    <li>Browser type.</li>
-                    <li>Code</li>
-                    <ul>
-                        <li>&#x003c;link href="lighthousemobile.css" rel="stylesheet" media="only screen and (max-width:480px)"&#x003e;</li>
-                    </ul>
-                </ul>
-            </ul>
-            Media type
-            <ul>
-                <li>all - all devices.</li>
-                <li>screen - computer screen.</li>
-                <li>only - hides the media query from older browsers.</li>
-                <li>print - printing the webpage.</li>
-                <li>&#x003c;link href="lighthousetablet.css" rel="stylesheet" media="only screen and (min-width:768px) and (max-width:1024px)"&#x003e;</li>
-                <li>Use the @media rule directly in the css.</li>
-                <ul>
-                    <li>@media only screen and (max-width:480px) {header {background-image: url(mobile.gif)}</li>
-                    <li>Search additional @media uses on the Web.</li>
-                </ul>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td><a href="Module7/" target="_blank"></a></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+		<h2 id="module6">Module 6: Page Layout</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module6/box1.html" target="_blank">Box 1</a>
+					</td>
+					<td>
+						Combined Lesson with Box 2 to showcase two separate 
+						divs, and a nested div.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module6/box2.html" target="_blank">Box 2</a>
+					</td>
+					<td>
+						Combined lesson with Box 1. This is the nested div 
+						rather than two separate divs.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module6/Ch6float/starteryls.html" 
+							target="_blank">
+							Float
+						</a>
+					</td>
+					<td>Showcasing the float: left property.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module6/Layout/index.html" target="_blank">
+							Layout
+						</a>
+					</td>
+					<td>
+						Creating a layout with two columns, one for the nav and 
+						the main.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module6/Ch6Hover/" target="_blank">Hover</a>
+					</td>
+					<td>
+						Showing the pseudo-class on :hover with the nav links.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module6/Button/index.html" target="_blank">
+							Button
+						</a>
+					</td>
+					<td>
+						Creating a nice stylized button that is linked to a sign 
+						up page. The sign up page is just to test the button link
+						and has no real styling.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module6/Ch6Practice/" target="_blank">
+							Practice
+						</a>
+					</td>
+					<td>
+						Using a lot of CSS properties to style the Lighthouse 
+						Island Bistro page nicely. The nav section has been 
+						updated to look more professionally done over the 
+						previous iterations.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module6/ReplaceCh6/" target="_blank">Replace</a>
+					</td>
+					<td>
+						This replaced the simple text to have a nice image to 
+						have a personalized font.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module6/Gallery/index.html" target="_blank">
+							Image Gallery
+						</a>
+					</td>
+					<td>Created a simple photo gallery.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module6/Gallery2/index.html" target="_blank">
+							Image Gallery 2
+						</a>
+					</td>
+					<td>
+						Updated the simple photo gallery to have thumbnails, and 
+						upon hovering, there is a larger photo to the right of 
+						the thumbnails. With caption text.
+					</td>
+				</tr>
+				<tr>
+					<td><a href="Module6/Ch6Blog/" target="_blank">Blog</a></td>
+					<td>Lighthouse Island Bistro page with a blog setup.</td>
+				</tr>
+			</tbody>
+		</table>
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+		<!-- End Module 6 -->
 
-    <hr />
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
 
-    <h2 id="module8">Module 8: Tables</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="Module8/" target="_blank"></a></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+		<hr />
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+		<h2 id="module7">Module 7: Links, Layout, & Mobile</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module7/Casita/" target="_blank">Links</a>
+					</td>
+					<td>Creating links to different pages.</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module7/Favorite/" target="_blank">
+							Favorites
+						</a>
+					</td>
+					<td>
+						Using the anchor tag to move to different sections of 
+						the webpage.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module7/Sprites/index.html" target="_blank">
+							Sprites
+						</a>
+					</td>
+					<td>
+						Using sprites, that combine smaller images into larger 
+						images to save loading times.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module7/Wildflowers3/index.html" target="_blank">
+							Three-Column CSS Page Layout
+						</a>
+					</td>
+					<td>
+						A majority of today's websites have three columns. 
+						Navigation, Main Content, and Sidebar. We see this a lot 
+						on websites that have navigation on the left and ads, 
+						relevant links, archives, etc. on the right. This page
+						has a left column with the menu, middle column with the 
+						main content, and the right with relevant content.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module7/WildflowersPrint/index.html" 
+							target="_blank">
+							CSS Styling for Print
+						</a>
+					</td>
+					<td>
+						CSS styling for Print. This gives control of what a 
+						visitor can print from your webpage. Uses the media 
+						attribute.<br /><br />
+						Can hide non-essential content. Use {display: none} to 
+						remove unwanted content.<br /><br />
+						Can use page-page properties to control the printing 
+						page breaks. page-break-before and page-break-after 
+						with values of always, avoid, auto.<br /><br />
+						Visitors may wish to see the URL on the printed page for 
+						future reference.<br />
+						It takes two properties. A CSS pseudo-element and CSS 
+						content.<br />
+						The pseudo elements are :after, :before, :first-letter, 
+						and:first-line.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Designing for the Mobile Web (Just Information)</p>
+					</td>
+					<td>
+						There are a few methods to design for the mobile web.
+						<ul>
+							<li>.mobi - this is the mobile domain extension.</li>
+							<li>Have a mobile directory in your website.</li>
+							<li>
+								Use stylesheets, one for the desktop and one for 
+								the mobile.
+							</li>
+						</ul>
+						There are several aspects of mobile design to consider.
+						<ul>
+							<li>Multiple, small screen sizes</li>
+							<li>
+								Low bandwidth - low signal strength can slow 
+								rendering.
+								/li>
+							<li>
+								Font, color, and media - Common fonts, good 
+								contrast between text and background.
+							</li>
+							<li>
+								Awkward controls - Touch displays need to be 
+								considered.
+							</li>
+							<li>
+								Functionality - Hyperlinks easily readable and 
+								accessible.
+							</li>
+						</ul>
+						Optimize Layout for Mobile Use.
+						<ul>
+							<li>Single column design with a smaller header.</li>
+							<li>Important navigation links.</li>
+							<li>Main content first.</li>
+							<li>
+								Footers for additional navigation and 
+								information.
+							</li>
+							<li>Limit scrolling in one direction.</li>
+							<li>Use heading elements.</li>
+							<li>Use lists.</li>
+							<li>Avoid tables at all costs.</li>
+							<li>Label form controls.</li>
+							<li>Avoid using pixel units.</li>
+							<li>Avoid absolute positioning.</li>
+							<li>Hide non-essential content.</li>
+						</ul>
+						Optimize Navigation for Mobile Use.
+						<ul>
+							<li>Provide navigation at the top.</li>
+							<li>Provide consistent navigation.</li>
+							<li>
+								Avoid targeted hyperlinks (open in new window).
+							</li>
+							<li>
+								Balance the number of links and the number of 
+								levels.
+							</li>
+						</ul>
+						Optimize Graphics for Mobile Use.
+						<ul>
+							<li>Avoid large images.</li>
+							<li>
+								Configure alternate smaller background images.
+							</li>
+							<li>
+								Avoid using images with text due to downsizing.
+							</li>
+							<li>
+								Specify image sizes custom for mobile displays.
+							</li>
+							<li>Provide alternate text for graphics.</li>
+						</ul>
+						Optimize Text for Mobile Use.
+						<ul>
+							<li>
+								Have good contrast between font and background 
+								colors.
+							</li>
+							<li>Use common font types.</li>
+							<li>Use em or percentages for font sizing.</li>
+							<li>Use short page titles.</li>
+							<li>Design for One Web.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module7/Query7/index.html" target="_blank">
+							Viewport Meta Tag & CSS Media Queries.
+						</a>
+					</td>
+					<td>
+						Viewport Meta Tag
+						<ul>
+							<li>
+								Meta tags are quite useful if configured 
+								correctly.
+							</li>
+							<li>
+								The viewport meta tag was developed by Apple for 
+								the iPhone and Android Smartphones.
+							</li>
+							<li>
+								Helps to properly scale websites for mobile 
+								devices.
+							</li>
+							<ul>
+								<li>
+									&#x003c;meta name="viewport" 
+									content="width=device-width, 
+									initial-scale=1.0"&#x003e
+								</li>
+							</ul>
+							<li>Directives (properties)</li>
+							<ul>
+								<li>
+									width- sets the width of the viewport in 
+									pixels.
+								</li>
+								<li>
+									height - sets the height of the viewport in 
+									pixels.
+								</li>
+								<li>
+									initial-scale - Numeric multiplier, set to 1 
+									of 100%.
+								</li>
+								<li>
+									minimum-scale - numeric multiplier, default 
+									to 0.25 for Mobile Safari.
+								</li>
+								<li>
+									maximum-scale - numeric multiplier, default 
+									to 0.25 for Mobile Safari.
+								</li>
+								<li>
+									user-scalable - Yes/no - determines if user 
+									has zoom control.
+								</li>
+							</ul>
+						</ul>
+						CSS Media Queries
+						<ul>
+							<li>
+								Progressive enhancements to improve viewing 
+								contexts (responsive web design from Module 5).
+							</li>
+							<li>What's a Media Query</li>
+							<ul>
+								<li>Determines factors of the mobile device.</li>
+								<li>Screen resolution.</li>
+								<li>Screen orientation.</li>
+								<li>Browser type.</li>
+								<li>Code</li>
+								<ul>
+									<li>
+										&#x003c;link href="lighthousemobile.css"
+										rel="stylesheet" media="only screen and 
+										(max-width:480px)"&#x003e;
+									</li>
+								</ul>
+							</ul>
+						</ul>
+						Media type
+						<ul>
+							<li>all - all devices.</li>
+							<li>screen - computer screen.</li>
+							<li>
+								only - hides the media query from older browsers.
+							</li>
+							<li>print - printing the webpage.</li>
+							<li>
+								&#x003c;link href="lighthousetablet.css" 
+								rel="stylesheet" media="only screen and 
+								(min-width:768px) and 
+								(max-width:1024px)"&#x003e;
+							</li>
+							<li>Use the @media rule directly in the css.</li>
+							<ul>
+								<li>
+									@media only screen and (max-width:480px) 
+									{header {background-image: url(mobile.gif)}
+								</li>
+								<li>
+									Search additional @media uses on the Web.
+								</li>
+							</ul>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module7/Flexible7/index.html" 
+							target="_blank">
+							Responsive Images
+						</a><br><br>
+						<a href="Module7/Picture7/index.html" 
+							target="_blank">
+							Responsive Images 2
+						</a>
+					</td>
+					<td>
+						Responsive Images
+						<ul>
+							<li>Flexible images with CSS</li>
+							<ul>
+								<li>HTML and CSS code needs changed</li>
+								<li>
+									Remove the height and width attributes from 
+									the image properties.
+								</li>
+								<li>Make the max-width to be 100%.</li>
+								<li>Maintain the aspect ratio as closely as 
+									possible. Can set the height: auto;
+								</li>
+							</ul>
+						</ul>
+						HTML5.1 Picture Element
+						<ul>
+							<li>
+								Picture element - Gives developers a method to 
+								display images based on specific criteria.
+							</li>
+							<li>Source Element</li>
+							<li>
+								A self-contained tag that is used with a 
+								container element.
+							</li>
+							<li>
+								Attribute and values of the source element 
+								property.
+							</li>
+							<ul>
+								<li>
+									srcset - Required - is the source of the 
+									image.
+								</li>
+								<li>media - Optional - media query.</li>
+								<li>
+									sizes - Optional - Numeric or percentage
+									value to configure the image dimensions.
+								</li>
+							</ul>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module7/" target="_blank"></a>
+					</td>
+					<td>
 
-    <hr />
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
-    <h2 id="module9">Module 9: Forms</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="Module9/" target="_blank"></a></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+		<!-- End Module 7 -->
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
 
-    <hr />
+		<hr />
 
-    <h2 id="module10">Module 10: Web Development</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="Module10/" target="_blank"></a></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+		<h2 id="module8">Module 8: Tables</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module8/" target="_blank"></a>
+					</td>
+					<td>
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
-    <hr />
+		<!-- End Module 8 -->
 
-    <h2 id="module11">Module 11: Web Multimedia and Interactivity</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="Module11/" target="_blank"></a></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+		<hr />
 
-    <hr />
+		<h2 id="module9">Module 9: Forms</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module9/" target="_blank"></a>
+					</td>
+					<td>
 
-    <h2 id="module12">Module 12: JavaScript and jQuery</h2>
-    <table>
-      <thead>
-        <th>Website</th>
-        <th>Summary</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="Module12/" target="_blank"></a></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
-    <div class="topBtn">
-      <a href="#top">Back to Top</a>
-    </div>
+		<!-- End Module 9 -->
 
-    <hr />
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
 
-    <footer>
-      <nav>
-        <a href="#module2">Module 2</a> | <a href="#module3">Module 3</a> |
-        <a href="#module4">Module 4</a> | <a href="#module6">Module 6</a> |
-        <a href="#module7">Module 7</a> | <a href="#module8">Module 8</a> |
-        <a href="#module9">Module 9</a> | <a href="#module10">Module 10</a> |
-        <a href="#module11">Module 11</a> | <a href="#module12">Module 12</a> |
-      </nav>
-      Copyright &copy; 2022 - Daniel Wernz - KO Tech Academy - Fundamentals of
-      HTML5 and CSS3
-    </footer>
-  </body>
+		<hr />
+
+		<h2 id="module10">Module 10: Web Development</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module10/" target="_blank"></a>
+					</td>
+					<td>
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- End Module 10 -->
+
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
+
+		<hr />
+
+		<h2 id="module11">Module 11: Web Multimedia and Interactivity</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module11/" target="_blank"></a>
+					</td>
+					<td>
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- End Module 11 -->
+
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
+
+		<hr />
+
+		<h2 id="module12">Module 12: JavaScript and jQuery</h2>
+		<table>
+			<thead>
+				<th>Website</th>
+				<th>Summary</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="Module12/" target="_blank"></a>
+					</td>
+					<td>
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- End Module 12 -->
+
+		<div class="topBtn">
+		<a href="#top">Back to Top</a>
+		</div>
+
+		<hr />
+
+		<footer>
+		<nav>
+		<a href="#module2">Module 2</a> | <a href="#module3">Module 3</a> |
+		<a href="#module4">Module 4</a> | <a href="#module6">Module 6</a> |
+		<a href="#module7">Module 7</a> | <a href="#module8">Module 8</a> |
+		<a href="#module9">Module 9</a> | <a href="#module10">Module 10</a> |
+		<a href="#module11">Module 11</a> | <a href="#module12">Module 12</a> |
+		</nav>
+		Copyright &copy; 2022 - Daniel Wernz - KO Tech Academy - Fundamentals of
+		HTML5 and CSS3
+		</footer>
+	</body>
 </html>
