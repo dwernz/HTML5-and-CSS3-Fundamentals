@@ -10,6 +10,9 @@
         text-align: center;
         font-size: 150%;
       }
+      table p {
+        font-size: 100%;
+      }
       table {
         margin: 0px auto;
         max-width: 60%;
@@ -484,13 +487,17 @@
         </tr>
         <tr>
           <td>
-            <a href="Module6/Gallery/index.html" target="_blank">Gallery</a>
+            <a href="Module6/Gallery/index.html" target="_blank"
+              >Image Gallery</a
+            >
           </td>
           <td>Created a simple photo gallery.</td>
         </tr>
         <tr>
           <td>
-            <a href="Module6/Gallery2/index.html" target="_blank">Gallery 2</a>
+            <a href="Module6/Gallery2/index.html" target="_blank"
+              >Image Gallery 2</a
+            >
           </td>
           <td>
             Updated the simple photo gallery to have thumbnails, and upon
@@ -526,6 +533,179 @@
           <td><a href="Module7/Favorite/" target="_blank">Favorites</a></td>
           <td>
             Using the anchor tag to move to different sections of the webpage.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Module7/Sprites/index.html" target="_blank">Sprites</a>
+          </td>
+          <td>
+            Using sprites, that combine smaller images into larger images to
+            save loading times.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Module7/Wildflowers3/index.html" target="_blank"
+              >Three-Column CSS Page Layout</a
+            >
+          </td>
+          <td>
+            A majority of today's websites have three columns. Navigation, Main
+            Content, and Sidebar. We see this a lot on websites that have
+            navigation on the left and ads, relevant links, archives, etc. on
+            the right. This page has a left column with the menu, middle column
+            with the main content, and the right with relevant content.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Module7/WildflowersPrint/index.html" target="_blank"
+              >CSS Styling for Print</a
+            >
+          </td>
+          <td>
+            CSS styling for Print. This gives control of what a visitor can
+            print from your webpage. Uses the media attribute.<br />
+            <br />
+            Can hide non-essential content. Use {display: none} to remove
+            unwanted content.
+            <br /><br />
+            Can use page-page properties to control the printing page breaks.
+            page-break-before and page-break-after with values of always, avoid,
+            auto.
+            <br /><br />
+            Visitors may wish to see the URL on the printed page for future
+            reference.
+            <br />
+            It takes two properties. A CSS pseudo-element and CSS content.
+            <br />
+            The pseudo elements are :after, :before, :first-letter, and
+            :first-line.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Designing for the Mobile Web (Just Information)</p>
+          </td>
+          <td>
+            There are a few methods to design for the mobile web.
+            <ul>
+              <li>.mobi - this is the mobile domain extension.</li>
+              <li>Have a mobile directory in your website.</li>
+              <li>
+                Use stylesheets, one for the desktop and one for the mobile.
+              </li>
+            </ul>
+            There are several aspects of mobile design to consider.
+            <ul>
+              <li>Multiple, small screen sizes</li>
+              <li>Low bandwidth - low signal strength can slow rendering.</li>
+              <li>
+                Font, color, and media - Common fonts, good contrast between
+                text and background.
+              </li>
+              <li>Awkward controls - Touch displays need to be considered.</li>
+              <li>
+                Functionality - Hyperlinks easily readable and accessible.
+              </li>
+            </ul>
+            Optimize Layout for Mobile Use.
+            <ul>
+              <li>Single column design with a smaller header.</li>
+              <li>Important navigation links.</li>
+              <li>Main content first.</li>
+              <li>Footers for additional navigation and information.</li>
+              <li>Limit scrolling in one direction.</li>
+              <li>Use heading elements.</li>
+              <li>Use lists.</li>
+              <li>Avoid tables at all costs.</li>
+              <li>Label form controls.</li>
+              <li>Avoid using pixel units.</li>
+              <li>Avoid absolute positioning.</li>
+              <li>Hide non-essential content.</li>
+            </ul>
+            Optimize Navigation for Mobile Use.
+            <ul>
+              <li>Provide navigation at the top.</li>
+              <li>Provide consistent navigation.</li>
+              <li>Avoid targeted hyperlinks (open in new window).</li>
+              <li>Balance the number of links and the number of levels.</li>
+            </ul>
+            Optimize Graphics for Mobile Use.
+            <ul>
+              <li>Avoid large images.</li>
+              <li>Configure alternate smaller background images.</li>
+              <li>Avoid using images with text due to downsizing.</li>
+              <li>Specify image sizes custom for mobile displays.</li>
+              <li>Provide alternate text for graphics.</li>
+            </ul>
+            Optimize Text for Mobile Use.
+            <ul>
+              <li>Have good contrast between font and background colors.</li>
+              <li>Use common font types.</li>
+              <li>Use em or percentages for font sizing.</li>
+              <li>Use short page titles.</li>
+              <li>Design for One Web.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Module7/" target="_blank"
+              >Viewport Meta Tag & CSS Media Queries.</a
+            >
+          </td>
+          <td>
+            Viewport Meta Tag
+            <ul>
+              <li>Meta tags are quite useful if configured correctly.</li>
+              <li>
+                The viewport meta tag was developed by Apple for the iPhone and
+                Android Smartphones.
+              </li>
+              <li>Helps to properly scale websites for mobile devices.</li>
+              <ul>
+                <li>&#x003c;meta name="viewport" content="width=device-width, initial-scale=1.0"&#x003e</li>
+              </ul>
+              <li>Directives (properties)</li>
+              <ul>
+                <li>width- sets the width of the viewport in pixels.</li>
+                <li>height - sets the height of the viewport in pixels.</li>
+                <li>initial-scale - Numeric multiplier, set to 1 of 100%.</li>
+                <li>minimum-scale - numeric multiplier, default to 0.25 for Mobile Safari.</li>
+                <li>maximum-scale - numeric multiplier, default to 0.25 for Mobile Safari.</li>
+                <li>user-scalable - Yes/no - determines if user has zoom control.</li>
+              </ul>
+            </ul>
+            CSS Media Queries
+            <ul>
+                <li>Progressive enhancements to improve viewing contexts (responsive web design from Module 5).</li>
+                <li>What's a Media Query</li>
+                <ul>
+                    <li>Determines factors of the mobile device.</li>
+                    <li>Screen resolution.</li>
+                    <li>Screen orientation.</li>
+                    <li>Browser type.</li>
+                    <li>Code</li>
+                    <ul>
+                        <li>&#x003c;link href="lighthousemobile.css" rel="stylesheet" media="only screen and (max-width:480px)"&#x003e;</li>
+                    </ul>
+                </ul>
+            </ul>
+            Media type
+            <ul>
+                <li>all - all devices.</li>
+                <li>screen - computer screen.</li>
+                <li>only - hides the media query from older browsers.</li>
+                <li>print - printing the webpage.</li>
+                <li>&#x003c;link href="lighthousetablet.css" rel="stylesheet" media="only screen and (min-width:768px) and (max-width:1024px)"&#x003e;</li>
+                <li>Use the @media rule directly in the css.</li>
+                <ul>
+                    <li>@media only screen and (max-width:480px) {header {background-image: url(mobile.gif)}</li>
+                    <li>Search additional @media uses on the Web.</li>
+                </ul>
+            </ul>
           </td>
         </tr>
         <tr>
