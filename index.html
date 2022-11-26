@@ -889,9 +889,183 @@
 				</tr>
 				<tr>
 					<td>
-						<a href="Module7/" target="_blank"></a>
+						<a href="Module7/Flexbox7/index.html" target="_blank">
+							Flexible Box Layout
+						</a>
 					</td>
 					<td>
+						<ul>
+							<li>
+								This is a rather new flexbox technique to layout
+								webpages for mobile devices that will not 
+								interfere with desktop devices.
+							</li>
+							<li>
+								Flexbox is well supported in modern browsers.
+							</li>
+							<li>
+								The flex container is configured using the 
+								display property. This will create a flexible 
+								container.
+							</li>
+							<ul>
+								<li>Some values are:</li>
+								<ul>
+									<li>
+										inline-flex - for flexible inline
+										containers.
+									</li>
+								</ul>
+							</ul>
+							<li>
+								The direction of the flex is configured using 
+								the flex-direction property.
+							</li>
+							<ul>
+								<li>
+									#demo {display: flex; flex-direction: row;}
+									</li>
+							</ul>
+							<li>
+								If we need to display the content on several
+								lines, we use the flex-wrap property.
+							</li>
+							<ul>
+								<li>
+									The default value is nowrap which maintains 
+									a single-line display.
+								</li>
+								<li>
+									The value wrap will allow the flex items to 
+									use multiple lines as needed. Think of it 
+									the same way as text wrapping.
+								</li>
+							</ul>
+							<li>
+								The justify-content property will tell the 
+								browser what to do with extra space.
+							</li>
+							<ul>
+								<li>
+									The value of center will place the flex 
+									item in the center.
+								</li>
+								<li>
+									The value of space-between will evenly
+									distribute the flex items and allocates
+									the empty space.
+								</li>
+							</ul>
+							<li>All items in a flex container are flexible.</li>
+							<li>They all have the same aspects.</li>
+							<ul>
+								<li>flexible in size.</li>
+								<li>
+									allocated the same amount of display area
+									in the container.
+								</li>
+								<li>display in the same order as coded.</li>
+								<li>modifications take place with CSS.</li>
+							</ul>
+							<li>Flex property</li>
+							<ul>
+								<li>Refer to 
+									<a href="http://www.w3.org/TR/css3-flexbox/#flex-common"
+										target="_blank">
+										www.w3.org/TR/css3-flexbox/#flex-common
+									</a>
+								</li>
+								<li>
+									This shows a list of values and attributes.
+								</li>
+							</ul>
+							<li>Order property</li>
+							<ul>
+								<li>
+									Will adjust the loading precedence for the 
+									flex items. The default value is 0. The 
+									motion values are -1 and 1.
+								</li>
+								<li>
+									Additional information is at
+									<a href="https://css-tricks.com/snippers/a-guide-to-flexbox"
+										target="_blank">
+										https://css-tricks.com/snippers/a-guide-to-flexbox
+									</a>
+								</li>
+							</ul>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module7/Grid7/index.html" target="_blank">
+							CSS Grid Layout
+						</a>
+					</td>
+					<td>
+						<ul>
+							<li>
+								There is a new method to design a layout with
+								CSS called CSS Grid Layout.
+							</li>
+							<li>
+								This is a new property still under candidate
+								status at W3C.
+							</li>
+							<li>
+								It is designed to let developers configure a 
+								two-dimensional grid layout.
+							</li>
+							<li>
+								It can be designed to be fixed-size or flexible.
+							</li>
+							<li>
+								It can also change the order of precedence for 
+								display elements or objects.
+							</li>
+						</ul>
+						Configure a grid container.
+						<ul>
+							<li>
+								First, define the grid container. This is the 
+								element that contains the grid area.
+							</li>
+							<li>Values:</li>
+							<ul>
+								<li>grid - indicated a block container.</li>
+								<li>
+									inline-grid indicates an inline display 
+									container.
+								</li>
+							</ul>
+							<li>
+								Grid lines define the grid rows and grid 
+								columns.
+							</li>
+							<li>
+								Grid cell is the intersect points. Just line a 
+								spreadsheet.
+							</li>
+						</ul>
+						Configure Grid Columns and Rows
+						<ul>
+							<li>grid-template-columns</li>
+							<li>grid-template-rows</li>
+							<ul>
+								<li>
+									These tell the browser how much space to
+									allocate for each row and column.
+								</li>
+								<li>Values:</li>
+								<ul>
+									<li>pixels</li>
+									<li>percentages</li>
+									<li>keywords (none, auto, etc.)</li>
+									<li>flex factor units</li>
+								</ul>								
+							</ul>
+						</ul>
 
 					</td>
 				</tr>
