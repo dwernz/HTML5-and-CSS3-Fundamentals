@@ -1303,10 +1303,457 @@
 			<tbody>
 				<tr>
 					<td>
+						<a href="Module9/form1.html" target="_blank">Overview of Forms</a>
+					</td>
+					<td>
+						<ul>Overview of Forms
+							<li>Forms are used everywhere.</li>
+							<li>Some Uses:</li>
+							<ul>
+								<li>Registering</li>
+								<li>Signing In</li>
+								<li>Emailing</li>
+							</ul>
+							<li>
+								Every time you hit a submit button after 
+								entering data you have more than likely used a 
+								form.
+							</li>
+							<li>Two main components of a form</li>
+							<ul>
+								<li>The HTML code that displays the code.</li>
+								<li>
+									The server-side processing that manipulates 
+									the data.
+								</li>
+							</ul>
+							<li>
+								Data is not information and information is not 
+								data.
+							</li>
+							<li>
+								Data is ambiguous, raw, and truly meaningless.
+							</li>
+							<li>
+								It takes at least two pieces of data to create 
+								information.
+							</li>
+						</ul>
+						<ul>Form Elements
+							<li>
+								The form element is the container that holds 
+								the form on the webpage.
+							</li>
+							<li>Forms are independent and cannot be nested.</li>
+							<li>
+								Forms themselves are not complicated but there
+								are complicated processes that happen in the 
+								background.
+							</li>
+							<li>
+								There are five attributes that make up a form.
+							</li>
+							<ul>
+								<li>
+									action - The URL or filename/path to the 
+									server.
+								</li>
+								<li>autocomplete - HTML5 attribute</li>
+								<ul>
+									<li>
+										On - The browser will fill the form.
+									</li>
+									<li>
+										Off - The browser will not fill the 
+										form.
+									</li>
+								</ul>
+								<li>
+									id - optional - alphanumeric - used to 
+									provide a unique identifier. The id name 
+									cannot be used elsewhere on the webpage.
+								</li>
+								<li>method - required</li>
+								<ul>
+									<li>
+										get - appends the form data to the web
+										address and sent to the web server.
+									</li>
+									<ul>
+										<li>
+											This is the string of extra 
+											characters, words, etc. we see 
+											following the filename, sessions, 
+											etc.
+										</li>
+									</ul>
+									<li>
+										post - this is the private method of
+										sending data to the server or another
+										webpage. Preferred value for the method 
+										attribute.
+									</li>
+								</ul>
+								<li>
+									name - optional - alphanumeric and must 
+									start with a letter. Be descriptive but 
+									short.
+								</li>
+								<ul>
+									<li>Form1 - not good</li>
+									<li>RegForm - okay</li>
+									<li>Order Form - good</li>
+									<li>SurveyForm - good</li>
+									<li>
+										FormForRegistering - not good, but 
+										could be used.
+									</li>
+								</ul>
+								<li>syntax</li>
+								<ul>
+									<li>
+										&#x003c;form name="OrderForm" 
+										method="post" id="OrderForm" 
+										action="processData.php"&#x003e;
+									</li>
+									<ul>
+										<li>
+											the action is the server-side
+											script that processes the data.
+										</li>
+									</ul>
+								</ul>
+							</ul>
+						</ul>
+						<ul>Form Controls
+							<li>
+								The places on the form that allows for
+								user control.
+							</li>
+							<ul>
+								<li>Input field</li>
+								<li>Radio button</li>
+								<li>Check boxes</li>
+								<li>Buttons</li>
+							</ul>
+							<li>New HTML controls allow for</li>
+							<ul>
+								<li>Email</li>
+								<li>URLs</li>
+								<li>Dates</li>
+								<li>Times</li>
+								<li>Date selection (calendar scripting</li>
+							</ul>
+						</ul>
+						<ul>Input Element Form Controls
+							<li>
+								The input element is a self-contained tag and
+								does not require a closing tag.
+							</li>
+							<li>
+								The type="reserved action" attribute defines
+								the purpose of this field.
+							</li>
+							<ul>
+								<li>
+									type="text" - is the long space we often
+									see when entering data. First Name, Last
+									Name, etc.
+								</li>
+								<li>type="radio" - is the radio button.</li>
+								<li>
+									type="file - initiates a "choose" for 
+									uploading/downloading.
+								</li>
+								<li>
+									The new HTML5 attribute "required" let's the
+									browser validate the data has been entered.
+								</li>
+							</ul>
+							<li>Submit Button</li>
+							<ul>
+								<li>
+									This button is used to "submit" or begin
+									executing the method get or post.
+								</li>
+								<ul>
+									<li>&#x003c;input type="submit&#x003e;</li>
+								</ul>
+							</ul>
+							<li>Reset Button</li>
+							<ul>
+								<li>
+									Use to clear the form and set fields to 
+									their default value - generally restarts 
+									the form.
+								</li>
+							</ul>
+							<li>Attributes for both buttons are the same.</li>
+							<ul>
+								<li>type</li>
+								<li>name</li>
+								<li>id</li>
+								<li>value</li>
+								<li>accesskey - hot key</li>
+								<li>
+									tabindex - the order of advancement when 
+									the tab key is used.
+								</li>
+							</ul>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="Module9/" target="_blank">
+							Input Element Form Controls
+						</a>
+					</td>
+					<td>
+						<ul>Checkbox
+							<li>
+								Used to select two or more options. can also 
+								be cleared by unchecking.
+							</li>
+							<ul>
+								<li>&#x003c;type="checkbox"&#x003e;</li>
+							</ul>
+							<li>Attributes</li>
+							<ul>
+								<li>type</li>
+								<li>name</li>
+								<li>id</li>
+								<li>checked - checks the box by default</li>
+								<li>
+									value - used for client side/server side 
+									processing
+								</li>
+								<li>disabled - disables form control</li>
+								<li>
+									readonly - control is active but cannot be 
+									changed from initial value
+								</li>
+								<li>
+									autofocus - HTML5 - places the cursor at 
+									this point upon access to form
+								</li>
+								<li>required - HTML5 - explained previously</li>
+								<li>
+									accesskey - hot key for access (shortcut 
+									key)
+								</li>
+								<li>
+									tabindex - the order of advancement when 
+									the tab key is used.
+								</li>
+							</ul>
+						</ul>
+						<ul>Radio Button
+							<li>
+								Allows for a single selection from two or more 
+								options.
+							</li>
+							<ul>
+								<li>&#x003c;type="radio"&#x003e;</li>
+							</ul>
+						</ul>
+						<ul>Hidden Input Controls
+							<li>
+								Stores information that is not visible in the 
+								viewport.
+							</li>
+							<li>Can be accessed by cleint/server scripting</li>
+							<ul>
+								<li>
+									&#x003c;input type="hidden" name="sendto" 
+									id="sendto" value="email@some.com&#x003e;
+								</li>
+								<li>
+									Can be used as the email address that is 
+									used to submit comments, contact info, etc.
+								</li>
+							</ul>
+							<li>Attributes</li>
+							<ul>
+								<li>type</li>
+								<li>name</li>
+								<li>id</li>
+								<li>value</li>
+								<li>disable</li>
+							</ul>
+						</ul>
+						<ul>Password Box
+							<li>
+								Same as the text box with the exception that 
+								characters entered in the field are masked, 
+								usually by asterisks.
+							</li>
+							<ul>
+								<li>
+									&#x003c;input type="password"&#x003e;
+								</li>
+							</ul>
+						</ul>
+						<ul>Scrolling Text Box
+							<li>Textarea Element</li>
+							<ul>
+								<li>
+									Similar to the text box but adds scrolling 
+									action.
+								</li>
+								<li>
+									The textarea element defines the start 
+									and stop of the scrolling text box.
+								</li>
+								<li>
+									The height and width can be tailored for 
+									specific needs.
+								</li>
+								<ul>
+									<li>
+										&#x003c;textarea name="comments" 
+										id="comments" cols="40" 
+										rows="2"&#x003e;
+									</li>
+									<ul>
+										<li>
+											cols - specifies the width based 
+											on the number of characters that 
+											can be entered, including spaces.
+										</li>
+										<li>
+											rows - specifies the height based 
+											on the number of characters 
+											stacked.
+										</li>
+									</ul>
+								</ul>
+							</ul>
+							<li>Attributes</li>
+							<ul>
+								<li>name</li>
+								<li>id</li>
+								<li>cols</li>
+								<li>rows</li>
+								<li>
+									maxlength - number of characters that can 
+									be entered.
+								</li>
+								<li>disabled</li>
+								<li>readonly</li>
+								<li>autofocus - HTML5</li>
+								<li>
+									placeholder - HTML5 - brief information to 
+									help the user.
+								</li>
+								<li>required - HTML5</li>
+								<li>
+									wrap - hard/soft - configures line breaks 
+									based on the number of characters
+								</li>
+								<li>accesskey - HTML5</li>
+							</ul>
+						</ul>
+						<ul>Select list
+							<li>
+								This is also known as a drop-down menu, 
+								drop-down option box, etc.
+							</li>
+							<li>
+								Let's you select from a list of values.
+							</li>
+							<ul>
+								<li>Select element</li>
+								<ul>
+									<li>
+										This is the container element that 
+										holds the values.
+									</li>
+									<li>Uses open/close tags</li>
+									<li>Attributes</li>
+									<ul>
+										<li>
+											name - alphanumeric - no spaces
+										</li>
+										<li>id - alphanumeric - no spaces</li>
+										<li>size</li>
+										<ul>
+											<li>
+												1 - sets the visible selection 
+												to one line and acts as a 
+												drop-down list
+											</li>
+											<li>
+												2 or more - make it a scrolling
+												list. Best to use if the user 
+												needs to make more than one 
+												selection. (ctrl key)
+											</li>
+											<li>
+												multiple - default is one 
+												selection - let's users select 
+												multiple options.
+											</li>
+											<li>
+												disabled - This is used when 
+												the first option is an input 
+												statement "Select Options Here"
+											</li>
+											<li>tabindex</li>
+										</ul>
+									</ul>
+								</ul>
+							</ul>
+						</ul>
+						<ul>Option Element
+							<li>This is the list in the Select Element</li>
+							<li>Uses opening/closing tags</li>
+							<ul>
+								<li>
+									&#x003c;option&#x003e;
+									&#x003c;/option&#x003e;
+								</li>
+							</ul>
+							<li>Attributes</li>
+							<ul>
+								<li>
+									value - is the placeholder for the selected 
+									option. Used when the form is trigger.
+								</li>
+								<li>Selected</li>
+								<ul>
+									<li>is the first option by default</li>
+									<li>
+										can be any option in the list that 
+										shows first.
+									</li>
+								</ul>
+								<li>disabled</li>
+								<ul>
+									<li>
+										Note - This is not a good option for 
+										navigation links. Best uses to select 
+										a value for processing.</li>
+								</ul>
+							</ul>
+						</ul>
+						<ul>
+							Image Button
+						</ul>
+						<ul>
+							Button Element
+						</ul>
+						<ul>Accesibility and Forms
+							<li>Label Element</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
 						<a href="Module9/" target="_blank"></a>
 					</td>
 					<td>
-
+				
 					</td>
 				</tr>
 			</tbody>
